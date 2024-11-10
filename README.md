@@ -4,9 +4,6 @@
 # Instagram Clone
 A fully functional Instagram clone built with MERN Stack (MongoDB, ExpressJS, React & NodeJS) and with real-time private messaging using WebSockets.
 
-👉 [Live Demo](https://instagram-clone-acampos.up.railway.app/login)
-
-
 ## Screenshots
 
 ### Log In
@@ -71,7 +68,7 @@ A fully functional Instagram clone built with MERN Stack (MongoDB, ExpressJS, Re
 ## Technologies
 ### Backend (Rest API)
 - NodeJS & Express
-- JWT Authentication (using Passport)
+- JWT Authentication
 - MongoDB
 - WebSockets
 
