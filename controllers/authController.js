@@ -101,7 +101,8 @@ const initMessage = async (newUser) => {
     username: 'admin',
     roles: ['admin'],
     hash: await bcrypt.hash('adminpassword', SALT),
-    salt: SALT
+    salt: SALT,
+    avatar: initRandomAvatar()
   }).save()
 
   const messageContent = `Hello Friend! Welcome to Instagram Clone!
@@ -121,5 +122,5 @@ const initMessage = async (newUser) => {
 
 const initRandomAvatar = () => {
   const imageCount = 9
-  return `https://res.cloudinary.com/dr2slpzm1/image/upload/v1655814477/instagram-clone/default/avatar-default-${Math.floor(Math.random() * imageCount)}.jpg`
+  return `https://res.cloudinary.com/dgas0c6mb/image/upload/v1731242668/avatar-default-${Math.floor(Math.random() * imageCount) + 1}.jpg`
 }

@@ -1,4 +1,3 @@
-
 import React, { useRef } from 'react'
 import { Flex, Button, FormControl, Input } from '@chakra-ui/react'
 import useAuth from '../../hooks/useAuth'

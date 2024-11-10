@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Flex, Box, Avatar } from '@chakra-ui/react'
 import useAuth from '../../hooks/useAuth'

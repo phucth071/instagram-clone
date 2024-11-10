@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Alert, AlertIcon, AlertDescription, AlertTitle, Box } from '@chakra-ui/react'
 import Card from './Card'

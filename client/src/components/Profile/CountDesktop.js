@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Box, Flex, Text, useDisclosure } from '@chakra-ui/react'
 import UserList from '../UserList'

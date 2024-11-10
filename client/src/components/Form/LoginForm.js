@@ -23,13 +23,6 @@ const LoginForm = () => {
   // to the login page to redirect them after login
   const from = location.state?.from?.pathname || '/'
 
-  const onDemoUser = () => {
-    mutate({
-      // Credentials for demo user
-      username: 'johndoe',
-      password: 'demo'
-    })
-  }
   const onSubmit = (data) => {
     mutate(data)
   }
@@ -52,8 +45,6 @@ const LoginForm = () => {
           <Button isLoading={isLoading} type='submit' w='100%'>Log In</Button>
         </VStack>
       </Box>
-
-      <Button w='100%' onClick={onDemoUser} variant='ghost' size='sm'>Log In as Demo User</Button>
     </>
 
   )

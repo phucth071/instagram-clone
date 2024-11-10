@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react'
 import { Image, AspectRatio, Box, Flex, Text, Center, Skeleton } from '@chakra-ui/react'
 import { ReactComponent as HeartIcon } from '../../assets/icons/profile/heart.svg'

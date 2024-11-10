@@ -55,7 +55,7 @@ export async function updateProfile ({ token, username, profileData }) {
 }
 
 export async function updateAvatar ({ formData, token }) {
-  let response = await fetch('https://api.cloudinary.com/v1_1/dr2slpzm1/image/upload', {
+  let response = await fetch('https://api.cloudinary.com/v1_1/dgas0c6mb/image/upload', {
     method: 'POST',
     body: formData
   })
@@ -65,6 +65,8 @@ export async function updateAvatar ({ formData, token }) {
   if (!response.ok) {
     throw new Error(data.error || 'Could not upload the file.')
   }
+
+  console.log(data.secure_url)
 
   response = await fetch(`${URL}/avatar/`, {
     method: 'POST',

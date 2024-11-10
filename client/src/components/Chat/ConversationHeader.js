@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Flex, Box, useDisclosure, Button } from '@chakra-ui/react'
 import { ReactComponent as NewMessageIcon } from '../../assets/icons/newMessage.svg'

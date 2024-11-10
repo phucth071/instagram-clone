@@ -91,7 +91,7 @@ export async function toggleSavePost ({ token, postId }) {
 }
 
 export async function addPost ({ token, formData, location, content }) {
-  let response = await fetch('https://api.cloudinary.com/v1_1/dr2slpzm1/image/upload', {
+  let response = await fetch('https://api.cloudinary.com/v1_1/dgas0c6mb/image/upload', {
     method: 'POST',
     body: formData
   })
