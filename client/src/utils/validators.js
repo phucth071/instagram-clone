@@ -12,7 +12,10 @@ export const validators = {
   },
   password: {
     required: 'Password is required',
-    minLength: { value: 4, message: 'Minimum length should be 4' },
+    pattern: {
+      value: /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@!])[A-Za-z\d@!]{8,}$/, message: 'Password must contain at least 8 characters, including letter, number, and special character (@!)'
+    },
+    minLength: { value: 8, message: 'Minimum length should be 8' },
     maxLength: { value: 50, message: 'Minimum length should be 50' }
   }
 }

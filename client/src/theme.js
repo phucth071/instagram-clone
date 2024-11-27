@@ -1,23 +1,32 @@
-import { extendTheme } from '@chakra-ui/react'
+import { extendTheme, useColorModeValue } from '@chakra-ui/react'
 
 const activeLabelStyles = {
   transform: 'scale(0.7) translateY(-8px) translateX(3px) '
-
 }
 
 const theme = extendTheme({
   styles: {
-    global: {
+    global: (props) => ({
       body: {
-        bg: '#f5f5f5'
+        bg: props.colorMode === 'light' ? '#f5f5f5' : '#1A202C',
+        color: props.colorMode === 'light' ? 'black' : 'white'
       },
       a: {
-        color: 'red',
+        // color: props.colorMode === 'light' ? 'red' : 'blue.300',
+        color: 'blue.300',
         _hover: {
           textDecoration: 'underline'
         }
+      },
+      p: {
+        // color: props.colorMode === 'black' ? 'white' : 'black'
+        color: 'black'
+      },
+      div: {
+        // bg: props.colorMode === 'light' ? '#f5f5f5' : '#1A202C',
+        textColor: 'black'
       }
-    }
+    })
   },
   breakpoints: {
     sm: '320px',
